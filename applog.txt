@@ -1,0 +1,110 @@
+INFO    2022-11-12 18:31:23,886 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla paciente
+INFO    2022-11-12 18:31:24,160 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Tabla paciente creada
+INFO    2022-11-12 18:31:24,166 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar paciente: ID: 1
+Apellido: arrue
+Nombre: tomas
+dni: 12345
+Domicilio: casa
+Fecha de Alta: una fecha
+
+INFO    2022-11-12 18:31:24,170 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - El paciente fue guardado exitosamente
+INFO    2022-11-12 18:31:24,171 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar paciente
+INFO    2022-11-12 18:31:24,182 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+ERROR   2022-11-12 18:31:24,196 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo encontrar debido a: org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+INFO    2022-11-12 18:44:35,673 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla paciente
+ERROR   2022-11-12 18:44:35,970 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo crear la tabla correctamnte debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PACIENTE" ya existe
+Table "PACIENTE" already exists; SQL statement:
+CREATE TABLE paciente(id int primary key,nombre varchar (255),apellido varchar (255),dni int ,domicilio varchar (255), fechaAlta varchar (255)) [42101-214]
+INFO    2022-11-12 18:44:35,976 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar paciente: ID: 1
+Apellido: arrue
+Nombre: tomas
+dni: 12345
+Domicilio: casa
+Fecha de Alta: una fecha
+
+ERROR   2022-11-12 18:44:35,980 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo guardar correctamente debido a: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:0 */ 1, 'tomas', 'arrue', 12345, 'casa', 'una fecha')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PACIENTE(ID) ( /* key:0 */ 1, 'tomas', 'arrue', 12345, 'casa', 'una fecha')"; SQL statement:
+INSERT INTO paciente VALUES(?,?,?,?,?,?) [23505-214]
+INFO    2022-11-12 18:44:35,980 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar paciente
+INFO    2022-11-12 18:44:35,992 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+INFO    2022-11-12 18:53:37,434 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla
+INFO    2022-11-12 18:53:37,711 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Tabla odontologo creada
+INFO    2022-11-12 18:53:37,720 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar odontologo: ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+
+INFO    2022-11-12 18:53:37,739 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - El odontologo fue guardado exitosamente
+INFO    2022-11-12 18:53:37,739 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar odontologo
+INFO    2022-11-12 18:53:37,750 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+ERROR   2022-11-12 18:53:37,751 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo encontrar debido a: org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+INFO    2022-11-12 18:55:44,366 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla
+ERROR   2022-11-12 18:55:44,643 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - no se pudo crear la tabla correctamnte debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ODONTOLOGO" ya existe
+Table "ODONTOLOGO" already exists; SQL statement:
+CREATE TABLE odontologo(id int primary key,apellido varchar(255),nombre varchar (255),matricula varchar (255)) [42101-214]
+INFO    2022-11-12 18:55:44,648 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar odontologo: ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+
+ERROR   2022-11-12 18:55:44,652 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo guardar correctamente debido a: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGO(ID) ( /* key:0 */ 1, 'vianchi', 'Diego', 'MP12345')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGO(ID) ( /* key:0 */ 1, 'vianchi', 'Diego', 'MP12345')"; SQL statement:
+INSERT INTO odontologo VALUES(?,?,?,?) [23505-214]
+INFO    2022-11-12 18:55:44,653 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar odontologo
+INFO    2022-11-12 18:55:44,663 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+INFO    2022-11-12 19:03:26,736 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla
+ERROR   2022-11-12 19:03:26,990 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - no se pudo crear la tabla correctamnte debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE turno(id int primary key,pacienteId int,odontologoId int,fecha varchar (255),confirmacion boolean ,CONSTRAINT FK_odontologoId [*]FOREGIN KEY (odontologoId) REFERENCES odontologo(id),CONSTRAINT FK_pacienteId FOREGIN KEY (pacienteId) REFERENCES paciente(id));"; se esperaba "., COMMENT, PRIMARY, UNIQUE, FOREIGN, CHECK"
+Syntax error in SQL statement "CREATE TABLE turno(id int primary key,pacienteId int,odontologoId int,fecha varchar (255),confirmacion boolean ,CONSTRAINT FK_odontologoId [*]FOREGIN KEY (odontologoId) REFERENCES odontologo(id),CONSTRAINT FK_pacienteId FOREGIN KEY (pacienteId) REFERENCES paciente(id));"; expected "., COMMENT, PRIMARY, UNIQUE, FOREIGN, CHECK"; SQL statement:
+CREATE TABLE turno(id int primary key,pacienteId int,odontologoId int,fecha varchar (255),confirmacion boolean ,CONSTRAINT FK_odontologoId FOREGIN KEY (odontologoId) REFERENCES odontologo(id),CONSTRAINT FK_pacienteId FOREGIN KEY (pacienteId) REFERENCES paciente(id)); [42001-214]
+INFO    2022-11-12 19:03:26,995 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar turno: ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+
+ERROR   2022-11-12 19:03:26,997 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo guardar correctamente debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TURNO" no encontrada
+Table "TURNO" not found; SQL statement:
+INSERT INTO turno VALUES(?,?,?,?;?); [42102-214]
+INFO    2022-11-12 19:05:35,416 [main] com.digitalhouse.odontologo.OdontologoApplication  - crear tabla
+INFO    2022-11-12 19:05:35,671 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Tabla turno creada
+INFO    2022-11-12 19:05:35,677 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar turno: ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+
+ERROR   2022-11-12 19:05:35,692 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo guardar correctamente debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO turno VALUES(?,?,?,?[*];?);"; se esperaba "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO turno VALUES(?,?,?,?[*];?);"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO turno VALUES(?,?,?,?;?); [42001-214]
+INFO    2022-11-12 19:07:01,903 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar turno: com.digitalhouse.odontologo.model.Turno@3930015a
+INFO    2022-11-12 19:08:00,112 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar turno: Turno{id=1, paciente=ID: 1
+Apellido: arrue
+Nombre: tomas
+dni: 12345
+Domicilio: casa
+Fecha de Alta: una fecha
+, odontologo=ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+, fecha='fechaaa', confirmacion=false}
+INFO    2022-11-12 19:09:18,620 [main] com.digitalhouse.odontologo.OdontologoApplication  - cargar turno: Turno{id=1, paciente=ID: 1
+Apellido: arrue
+Nombre: tomas
+dni: 12345
+Domicilio: casa
+Fecha de Alta: una fecha
+, odontologo=ID: 1
+Apellido: vianchi
+Nombre: Diego
+Matricula: MP12345
+, fecha='fechaaa', confirmacion=false}
+INFO    2022-11-12 19:09:18,864 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - El turno fue guardado exitosamente
+INFO    2022-11-12 19:10:12,956 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar turno
+INFO    2022-11-12 19:10:13,203 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+ERROR   2022-11-12 19:10:13,216 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - No se pudo encontrar debido a: org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "FK_pacienteId" no encontrada
+Column "FK_pacienteId" not found [42122-214]
+INFO    2022-11-12 19:11:19,869 [main] com.digitalhouse.odontologo.OdontologoApplication  - buscar turno
+INFO    2022-11-12 19:11:20,136 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+INFO    2022-11-12 19:11:20,138 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada
+INFO    2022-11-12 19:11:20,140 [main] com.digitalhouse.odontologo.repository.impl.OdontologoDaoH2  - Busqueda finalizada

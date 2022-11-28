@@ -1,0 +1,24 @@
+package com.digitalhouse.odontologo.controller;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.web.bind.annotation.RestController;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@RestController("/odontologo")
+public class OdontologoController {
+    //private final OdontologoServiceImpl odontologoService;
+
+
+
+
+
+
+
+
+
+
+}
