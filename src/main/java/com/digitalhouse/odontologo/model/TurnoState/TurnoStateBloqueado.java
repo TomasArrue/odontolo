@@ -3,8 +3,6 @@ package com.digitalhouse.odontologo.model.TurnoState;
 import com.digitalhouse.odontologo.model.Persona;
 
 public class TurnoStateBloqueado extends ATurnoState{
-
-
     /**
      * El estado bloqueado impide que otras personas puedan acceder a este turno,
      *  mientras la persona confinrma que lo tomara.

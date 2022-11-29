@@ -16,7 +16,8 @@ import javax.persistence.*;
 @Entity
 public abstract class ATurnoState implements ITurnoState{
     /**
-     * @param persona representa al usuario que que opera el turno.
+     * persona representa al usuario que que opera el turno.
+     * turno es el objeto donde se encuentra el state.
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

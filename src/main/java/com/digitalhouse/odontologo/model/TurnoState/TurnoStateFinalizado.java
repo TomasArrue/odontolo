@@ -6,7 +6,6 @@ public class TurnoStateFinalizado extends ATurnoState{
     /**
      * El estado finalizado indica que la persona fue atendido.
      */
-
     @Override
     public void cambiarEstado(Persona persona) {
 

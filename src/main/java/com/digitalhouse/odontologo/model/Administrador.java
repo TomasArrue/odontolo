@@ -7,6 +7,11 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+
+
+
+
+
 @Entity
 @Getter
 @Setter
@@ -14,6 +19,9 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Table(name = "administradores")
 public class Administrador {
+    /**
+     * Tipo de usuario con total acceso a la consulta y creacion de turnos
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

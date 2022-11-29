@@ -14,6 +14,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "personas")
 public class Persona {
+    /**
+     * Representa la informacion personal del usuario.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

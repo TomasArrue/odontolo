@@ -14,6 +14,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "pacientes")
 public class Paciente {
+    /**
+     * Tipo de usuario capas de crear turnos con cualquier odontologo, mientras actue como paciente.
+     * Solo puede ver los turnos en donde sea paciente.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
