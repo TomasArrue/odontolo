@@ -19,14 +19,15 @@ public class Odontologo{
     @Column(name = "id")
     private Integer id;
     private String matricula;
+    @OneToOne
+    private Usuario usuario;
+    @OneToOne
+    private Persona persona;
 
-    private Integer personaId;
-    private Integer usuarioId;
-
-    public Odontologo(String matricula, Integer personaId, Integer usuarioId) {
+    public Odontologo(String matricula, Persona persona, Usuario usuario) {
         this.matricula = matricula;
-        this.personaId = personaId;
-        this.usuarioId = usuarioId;
+        this.persona = persona;
+        this.usuario = usuario;
     }
 
     @Override
@@ -34,8 +35,8 @@ public class Odontologo{
         return "Odontologo{" +
                 "id=" + id +
                 ", matricula='" + matricula + '\'' +
-                ", persona=" + personaId +
-                ", usuario=" + usuarioId +
+                ", persona=" + usuario + '\'' +
+                ", usuario=" + persona +
                 '}';
     }
 }

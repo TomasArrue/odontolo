@@ -23,6 +23,7 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
 
     @Override
     public Domicilio guardar(Domicilio domicilio) {
+        /*
         try {
             Connection con = getConection();
             PreparedStatement p = con.prepareStatement("INSERT INTO domicilio VALUES(?,?,?,?,?);");
@@ -37,11 +38,16 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
         } catch (Exception e){
             logger.error("No se pudo guardar el domicilio correctamente debido a: " + e);
         }
-        return domicilio;
+
+       */
+        return null;
+
+
     }
 
     @Override
     public Domicilio buscar(Integer id) {
+        /*
         Domicilio domicilio = new Domicilio();
         try {
             Connection con = getConection();
@@ -62,7 +68,9 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
         catch (Exception e){
             logger.error("No se pudo encontrar el domicilio debido a: " + e);
         }
-        return domicilio;
+
+         */
+        return null;
     }
 
     @Override
@@ -85,7 +93,8 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
     }
 
     @Override
-    public List<Domicilio> buscartodos() {
+    public List<Domicilio> buscartodos() {/*
+
         List<Domicilio> domicilios = new ArrayList<>();
         try {
             Connection con = getConection();
@@ -105,7 +114,8 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
         } catch (Exception e){
             logger.error("No se pudieron mostrar todos los domicilios debido a: " + e);
         }
-        return domicilios;
+        */
+        return null;
     }
 
     @Override

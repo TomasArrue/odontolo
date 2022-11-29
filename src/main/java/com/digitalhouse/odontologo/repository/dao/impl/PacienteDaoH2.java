@@ -21,6 +21,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
     }
     @Override
     public Paciente guardar(Paciente paciente) {
+        /*
         try {
             Connection con = getConection();
             PreparedStatement p = con.prepareStatement("INSERT INTO paciente VALUES(?,?,?,?,?);");
@@ -36,11 +37,14 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         } catch (Exception e){
             logger.error("No se pudo guardar el paciente correctamente debido a: " + e);
         }
-        return paciente;
+
+         */
+        return null;
     }
 
     @Override
     public Paciente buscar(Integer id) {
+        /*
         Paciente paciente = new Paciente();
         try {
             Connection con = getConection();
@@ -60,7 +64,9 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         catch (Exception e){
             logger.error("No se pudo encontrar debido a: " + e);
         }
-        return paciente;
+
+         */
+        return null;
     }
 
     @Override
@@ -84,6 +90,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public List<Paciente> buscartodos() {
+        /*
         List<Paciente> pacientes = new ArrayList<>();
         try {
             Connection con = getConection();
@@ -104,7 +111,9 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         } catch (Exception e){
             logger.error("No se pudieron mostrar todos lo pacientes debido a: " + e);
         }
-        return pacientes;
+
+         */
+        return null;
     }
 
     @Override
@@ -139,3 +148,4 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         }
     }
 }
+

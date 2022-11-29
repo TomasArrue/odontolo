@@ -4,10 +4,10 @@ import com.digitalhouse.odontologo.model.Persona;
 
 public interface ITurnoState {
 
-    void cambiarEstado();
+    void cambiarEstado(Persona persona);
 
-    void confirmarEstado();
+    void confirmarEstado(Persona persona);
 
-    void cancelarEstado();
+    void cancelarEstado(Persona persona);
 
 }

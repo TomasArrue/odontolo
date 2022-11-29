@@ -24,6 +24,8 @@ public class TurnoDaoH2 implements IDao<Turno> {
     }
     @Override
     public Turno guardar(Turno turno) {
+        /*
+
         try {
             Connection con = getConection();
             PreparedStatement p = con.prepareStatement("INSERT INTO turno VALUES(?,?,?,?,?);");
@@ -38,11 +40,14 @@ public class TurnoDaoH2 implements IDao<Turno> {
         } catch (Exception e){
             logger.error("No se pudo guardar el turno correctamente debido a: " + e);
         }
-        return turno;
+
+         */
+        return null;
     }
 
     @Override
     public Turno buscar(Integer id) {
+        /*
         Turno turno = new Turno();
         try {
             Connection con = getConection();
@@ -64,7 +69,9 @@ public class TurnoDaoH2 implements IDao<Turno> {
         catch (Exception e){
             logger.error("No se pudo encontrar el turno debido a: " + e);
         }
-        return turno;
+
+         */
+        return null;
     }
 
     @Override
@@ -88,6 +95,7 @@ public class TurnoDaoH2 implements IDao<Turno> {
 
     @Override
     public List<Turno> buscartodos() {
+        /*
         List<Turno> turnos = new ArrayList<>();
         try {
             Connection con = getConection();
@@ -107,7 +115,9 @@ public class TurnoDaoH2 implements IDao<Turno> {
         } catch (Exception e){
             logger.error("No se pudieron mostrar todos lo turnos debido a: " + e);
         }
-        return turnos;
+
+         */
+        return null;
     }
 
     @Override

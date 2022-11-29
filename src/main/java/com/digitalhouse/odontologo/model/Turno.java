@@ -1,5 +1,6 @@
 package com.digitalhouse.odontologo.model;
 
+import com.digitalhouse.odontologo.model.TurnoState.ATurnoState;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,26 +19,30 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    private Integer pacienteId;
-    private Integer odontologoId;
+    @ManyToMany
+    private Persona persona;
+    @ManyToMany
+    private Odontologo odontologo;
     private String fecha;
-    private boolean confirmacion;
 
-    public Turno(Integer pacienteId, Integer odontologoId, String fecha, Boolean confirmacion) {
-        this.pacienteId = pacienteId;
-        this.odontologoId = odontologoId;
+    @OneToOne
+    private ATurnoState turnoState;
+
+    public Turno(Persona persona, Odontologo odontologo, String fecha, ATurnoState turnoState) {
+        this.persona = persona;
+        this.odontologo = odontologo;
         this.fecha = fecha;
-        this.confirmacion = confirmacion;
+        this.turnoState = turnoState;
     }
 
     @Override
     public String toString() {
         return "Turno{" +
                 "id=" + id +
-                ", paciente=" + pacienteId +
-                ", odontologo=" + odontologoId +
+                ", persona=" + persona + '\'' +
+                ", odontologo=" + odontologo + '\'' +
                 ", fecha='" + fecha + '\'' +
-                ", confirmacion=" + confirmacion +
+                ", estado=" + turnoState +
                 '}';
     }
 }

@@ -24,19 +24,28 @@ public class Persona {
     private String apellido;
     @Column(name = "dni")
     private Integer dni;
+    @Column(name = "telefono")
+    private Long telefono;
+    @OneToMany
+    private Domicilio domicilio;
 
-    public Persona(String nombre, String apellido, Integer dni) {
+
+    public Persona(String nombre, String apellido, Integer dni, Domicilio domicilio, Long telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
+        this.telefono = telefono;
+        this.domicilio = domicilio;
     }
 
     @Override
     public String toString() {
         return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", dni=" + dni +
+                "nombre= " + nombre + '\'' +
+                ", apellido= " + apellido + '\'' +
+                ", dni= " + dni + '\'' +
+                ", telefono= " + telefono + '\'' +
+                ", domicilio= " + domicilio +
                 '}';
     }
 }

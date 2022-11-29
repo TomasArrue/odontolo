@@ -18,15 +18,16 @@ public class Paciente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    private Integer usuarioID;
-    private Integer personaID;
-    private Integer domicilioID;
+    @OneToOne
+    private Usuario usuario;
+    @OneToOne
+    private Persona persona;
+
     private String fechaAlta;
 
-    public Paciente(Integer usuarioID, Integer personaID, Integer domicilioID, String fechaAlta) {
-        this.usuarioID = usuarioID;
-        this.personaID = personaID;
-        this.domicilioID = domicilioID;
+    public Paciente(Usuario usuario, Persona persona, String fechaAlta) {
+        this.usuario = usuario;
+        this.persona = persona;
         this.fechaAlta = fechaAlta;
     }
 
@@ -34,9 +35,8 @@ public class Paciente {
     public String toString() {
         return "Paciente{" +
                 "id=" + id +
-                ", usuario=" + usuarioID +
-                ", persona=" + personaID +
-                ", domicilio='" + domicilioID + '\'' +
+                ", usuario=" + usuario + '\'' +
+                ", persona=" + persona + '\'' +
                 ", fechaAlta='" + fechaAlta + '\'' +
                 '}';
     }

@@ -8,6 +8,7 @@ import com.digitalhouse.odontologo.service.PacienteService;
 import com.digitalhouse.odontologo.service.TurnoService;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.File;
@@ -18,8 +19,10 @@ public class OdontologoApplication {
 	public static void main(String[] args) {
 		File log4jfile = new File("./log4j.properties");
 		PropertyConfigurator.configure(log4jfile.getAbsolutePath());
-		//SpringApplication.run(OdontologoApplication.class, args);
+		SpringApplication.run(OdontologoApplication.class, args);
 
+
+		/*
 		PacienteService pacienteService = new PacienteService(new PacienteDaoH2());
 
 
