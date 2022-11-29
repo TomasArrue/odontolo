@@ -4,93 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="478d502c-af76-4348-92e3-a5f60a4990f9" name="Changes" comment="primer commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/clinicaOdontologica.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes documentacion/Relaciones Base de Datos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes documentacion/TurnoState.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Administrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/OdontologoApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/controller/DomicilioController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/controller/OdontologoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/controller/PacienteController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/controller/TurnoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/dao/impl/DomicilioDaoH2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Administrador.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Domicilio.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Odontologo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Paciente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Persona.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Turno.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/ATurnoState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/ITurnoState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateBloqueado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateConfirmado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateDisponible.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateEnSala.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateFinalizado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateOcupado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStatePendiente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/TurnoState/TurnoStateVencido.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/model/Usuario.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/IDomicilioRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/IOdontologoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/IPacienteRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/ITurnoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/dao/IDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/dao/impl/DomicilioDaoH2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/dao/impl/OdontologoDaoH2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/dao/impl/PacienteDaoH2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/repository/dao/impl/TurnoDaoH2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/service/OdontologoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/service/PacienteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/service/TurnoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/service/impl/DomicilioServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/digitalhouse/odontologo/service/impl/IDomicilioService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/odontologo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/odontologo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.digitalhouse.odontologo.OdontologoApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.digitalhouse.odontologo.OdontologoApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/digitalhouse/odontologo/OdontologoApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/myDataBase.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/myDataBase.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/OdontologoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/OdontologoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Odontologo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/Turno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/ATurnoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/ATurnoState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/ITurnoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/ITurnoState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateBloqueado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateBloqueado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateConfirmado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateConfirmado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateDisponible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateDisponible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateEnSala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateEnSala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateFinalizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateFinalizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateOcupado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateOcupado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStatePendiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStatePendiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateVencido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/model/TurnoState/TurnoStateVencido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/DomicilioDaoH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/DomicilioDaoH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/PacienteDaoH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/PacienteDaoH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/TurnoDaoH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalhouse/odontologo/repository/dao/impl/TurnoDaoH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="478d502c-af76-4348-92e3-a5f60a4990f9" name="Changes" comment="commit de pre-entrega" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669670229809</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit de pre-entrega">
+      <created>1669682109852</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669682109852</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="primer commit" />
+    <MESSAGE value="commit de pre-entrega" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit de pre-entrega" />
   </component>
 </project>
