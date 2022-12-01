@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TurnoDaoH2 implements IDao<Turno> {
+    /**
+     * @deprecated
+     */
     private static final Logger logger = Logger.getLogger(OdontologoDaoH2.class);
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
     private final static String DB_URL = "jdbc:h2:./database/myDataBase";

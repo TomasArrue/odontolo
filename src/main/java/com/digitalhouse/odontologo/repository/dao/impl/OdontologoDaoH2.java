@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDaoH2 implements IDao<Odontologo> {
+    /**
+     * @deprecated
+     */
 
     private static final Logger logger = Logger.getLogger(OdontologoDaoH2.class);
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
